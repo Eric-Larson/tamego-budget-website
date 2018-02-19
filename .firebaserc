@@ -1,5 +1,6 @@
 {
   "projects": {
+	"default": "budget-website-staging",
     "staging": "budget-website-staging",
     "prod": "budget-website-prod"
   }
