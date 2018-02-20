@@ -13,10 +13,8 @@ before_script:
 
 script:
     - if [ "$TRAVIS_BRANCH" = "staging" ]; then
-        firebase use staging;
         firebase deploy --project staging --token $FIREBASE_TOKEN;
       fi
     - if [ "$TRAVIS_BRANCH" = "master" ]; then
-        firebase use prod;
         firebase deploy --project prod --token $FIREBASE_TOKEN;
       fi
